@@ -1,71 +1,174 @@
-# AI Productivity Hub
+# AI Workplace Productivity Assistant
 
-Build a modern responsive SaaS web app called **AI Workplace Productivity Assistant**.
+##  Project Overview
 
-Create a clean professional dashboard with a **Tiffany blue + deep red/coral** colour palette, white backgrounds, rounded cards, subtle shadows, and modern typography.
+**AI Workplace Productivity Assistant** is a modern, responsive web application designed to help professionals improve workplace productivity using AI-assisted tools.
 
-### Core Features
+The application focuses on automating common workplace activities such as writing professional emails, summarizing meeting notes, extracting action items, and organizing daily or weekly tasks.
 
-1. **Smart Email Generator**
+The project is designed as a **frontend-only application**, making it lightweight and easy to run without a backend, database, or authentication system.
 
-* Input: recipient, subject/purpose, key points.
-* Tone selector: Formal, Friendly, Persuasive.
-* Generate an AI-written professional email.
-* Make the generated email editable with Copy and Regenerate buttons.
+---
 
-2. **Meeting Notes Summarizer**
+##  Features Implemented
 
-* Large text area for meeting notes.
-* Generate a concise AI summary.
-* Automatically display separate sections for **Summary, Action Items, Decisions, and Deadlines**.
-* Make results editable and copyable.
+###  Smart Email Generator
 
-3. **AI Task Planner**
+* Generate professional workplace emails.
+* Supports multiple communication tones:
 
-* Users enter their tasks, priorities, and available hours.
-* Generate a practical daily or weekly schedule.
-* Prioritize tasks using urgency and importance.
-* Display the schedule as clean task cards or a timeline.
-* Allow editing of generated tasks.
+  * Formal
+  * Friendly
+  * Persuasive
+* Uses structured user inputs to generate contextual AI-style responses.
+* Generated emails can be edited.
+* Copy generated email content.
 
-### UI
+###  Meeting Notes Summarizer
 
-* Left sidebar navigation: Dashboard, Email Generator, Meeting Summarizer, Task Planner, Settings.
-* Dashboard should show productivity overview cards and quick actions.
-* Responsive for desktop, tablet, and mobile.
-* Add polished loading states and empty states.
-* Use icons consistently.
-* Include a small **Responsible AI** disclaimer stating that AI-generated content should be reviewed before use.
+* Accepts lengthy meeting notes.
+* Generates a concise summary.
+* Extracts:
 
-### AI Behaviour
+  * Action Items
+  * Decisions
+  * Deadlines
+* Generated content can be edited and copied.
 
-Make outputs feel genuinely AI-generated, professional, contextual, and different based on the user's inputs. Do not use generic placeholder responses. Use structured prompts internally for each feature.
+###  AI Task Planner
 
-### Technical Constraints
+* Create daily or weekly work schedules.
+* Add tasks and priorities.
+* Organize tasks based on urgency and importance.
+* Generate structured schedules.
+* Edit generated tasks.
 
-* **Frontend only — no backend, database, authentication, or external API.**
-* Store temporary data locally in the browser where useful.
-* Implement functional frontend interactions and simulated AI generation without requiring API keys.
-* Keep the architecture simple and suitable for a Lovable Free project.
-* Prioritize a polished working UI over unnecessary features.
+###  Modern Dashboard
 
-This project was built with [Lovable](https://lovable.dev).
+* SaaS-style dashboard interface.
+* Sidebar navigation.
+* Responsive desktop, tablet, and mobile layouts.
+* Productivity overview cards.
+* Quick access to the main AI tools.
 
-## Build with Lovable
+###  Responsible AI
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/b9bd6e4e-373a-4629-9f4f-3f191ac02f06).
+* Includes a Responsible AI disclaimer.
+* Users are encouraged to review AI-generated information before using it for professional purposes.
+* AI outputs remain editable so users maintain control over the final result.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+##  Technologies and Tools Used
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+### Frontend
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+* **React**
+* **JavaScript / TypeScript**
+* **HTML5**
+* **CSS3**
+
+### Development & Design
+
+* **Lovable** – Application development and UI generation
+* **Git** – Version control
+* **GitHub** – Source code management and repository hosting
+
+### Application Architecture
+
+* Frontend-only architecture
+* No backend server
+* No database
+* No authentication
+* Browser-based temporary/local data storage where required
+
+---
+
+##  Setup Instructions
+
+### Prerequisites
+
+Make sure the following are installed:
+
+* Node.js
+* npm
+* Git
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/ai-workplace-productivity-assistant.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd ai-workplace-productivity-assistant
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
 npm run dev
 ```
+
+### 5. Open the application
+
+Open the local development URL displayed in your terminal, typically:
+
+```text
+https://ai-work-buddy-13.lovable.app
+```
+
+---
+
+##  Main Application Sections
+
+```text
+AI Workplace Productivity Assistant
+│
+├── Dashboard
+├── Smart Email Generator
+├── Meeting Notes Summarizer
+├── AI Task Planner
+└── Settings
+```
+
+---
+
+##  Team Members
+
+### Project Team
+
+| Name                | Role                     |
+| ------------------- | ------------------------ |
+| **Kiyan Ramauthar** | Developer / Project Lead |
+
+> If this is a group project, add additional team members and their roles to the table above.
+
+---
+
+##  Design
+
+The application uses a clean, modern SaaS-inspired interface with:
+
+* Tiffany blue primary colour
+* Deep red/coral accent colour
+* White backgrounds
+* Rounded UI components
+* Subtle shadows
+* Responsive layouts
+* Professional typography
+* Consistent navigation and icons
+
+---
+
+
+The current version focuses on the core frontend experience and AI-assisted workplace productivity features. Future versions may integrate real AI APIs, cloud storage, authentication, email services, and calendar integrations.
+
